@@ -26,12 +26,12 @@
   <!--
     The parent pom defines common style checks and testing strategies for our samples.
     Removing or replacing it should not effect the execution of the samples in anyway.
-  -->
   <parent>
     <groupId>com.google.cloud.samples</groupId>
     <artifactId>shared-configuration</artifactId>
     <version>1.2.0</version>
   </parent>
+  -->
 
   <properties>
     <maven.compiler.target>11</maven.compiler.target> <!-- or 17 to use JDK17 features.-->
@@ -50,12 +50,7 @@
     </dependencies>
   </dependencyManagement>
 
-  <dependencies>
-    <dependency>
-      <groupId>com.google.appengine</groupId>
-      <artifactId>appengine-api-1.0-sdk</artifactId>
-      <version>2.0.24</version>
-    </dependency>
+
 
     <dependency>
       <groupId>javax.servlet</groupId>
@@ -66,16 +61,10 @@
     </dependency>
 
     <dependency>
-      <groupId>com.google.auto.value</groupId>
-      <artifactId>auto-value</artifactId>
-      <version>1.10.4</version>
-      <scope>provided</scope>
-    </dependency>
-
-    <dependency>
-      <groupId>com.google.auto.value</groupId>
-      <artifactId>auto-value-annotations</artifactId>
-    </dependency>
+    <groupId>com.google.appengine</groupId>
+    <artifactId>appengine-api-1.0-sdk</artifactId>
+    <version>2.0.4</version> <!-- or later-->
+</dependency>
 
     <dependency>
       <groupId>com.google.code.findbugs</groupId>
